@@ -1,0 +1,43 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"AnywarePlugin\"><param name=\"ios-package\" value=\"AnywarePlugin\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.chinasofti.loadpage"
+        },
+        "chinasofti.anyware": {
+            "PACKAGE_NAME": "com.chinasofti.loadpage"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "id": "chinasofti.anyware.AnywarePlugin",
+            "file": "plugins/chinasofti.anyware/www/AnywarePlugin.js",
+            "pluginId": "chinasofti.anyware",
+            "clobbers": [
+                "chinasofti.anyware.AnywarePlugin"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "cordova-plugin-whitelist": "1.3.0",
+        "chinasofti.anyware": "1.0.0"
+    }
+}
